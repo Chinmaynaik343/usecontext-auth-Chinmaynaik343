@@ -1,6 +1,6 @@
 
 import React, { createContext, useContext, useState } from "react";
-import "./App.css";
+import ".styles/App.css";
 
 const AuthContext = createContext();
 
