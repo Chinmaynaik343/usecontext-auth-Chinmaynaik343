@@ -1,5 +1,6 @@
 
 import React, { createContext, useContext, useState } from "react";
+import "./App.css";
 
 const AuthContext = createContext();
 
@@ -7,7 +8,7 @@ function Auth() {
   const { isAuthenticated, setIsAuthenticated } = useContext(AuthContext);
 
   return (
-    <div>
+    <div className="auth-container">
       <h2>Authentication</h2>
 
       <label>
@@ -21,8 +22,8 @@ function Auth() {
 
       <p>
         {isAuthenticated
-          ? "You are authenticated"
-          : "You are not authenticated"}
+          ? "Authenticated Successfully!"
+          : "Please verify that you are not a robot."}
       </p>
     </div>
   );
